@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="472px" viewBox="0 0 220 472" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>balon1</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="balon1">
+            <path d="M107.48,268.425 L112.18,306.735 C112.8,311.825 113.33,317.375 110.6,321.735 C108.01,325.845 103.15,327.805 99.37,330.845 C86.96,340.845 88.09,359.955 92.37,375.295 C96.65,390.635 102.81,407.115 96.86,421.875 C94.4,427.965 90.06,433.095 86.86,438.815 C81.370006,448.589778 79.1947272,459.880177 80.66,470.995" id="Path" stroke="#535461" stroke-width="2"></path>
+            <polygon id="Path" fill="#3AD29F" fill-rule="nonzero" points="123.77 277.315 97.29 277.315 101.93 261.425 117.81 261.425"></polygon>
+            <path d="M219.73,109.865 C219.73,170.545 170.54,259.435 109.87,259.435 C49.2,259.435 -5.68434189e-14,170.545 -5.68434189e-14,109.865 C-5.68434189e-14,49.188236 49.188236,0 109.865,0 C170.541764,0 219.73,49.188236 219.73,109.865 L219.73,109.865 Z" id="Path" fill="#3AD29F" fill-rule="nonzero"></path>
+            <polygon id="Path" fill="#535461" fill-rule="nonzero" points="117.81 262.085 101.93 262.085 92.66 256.795 127.08 256.795"></polygon>
+            <path d="M70.16,24.485 C70.16,24.485 23.83,49.635 17.21,99.935" id="Path" fill="#FFFFFF" fill-rule="nonzero" opacity="0.1"></path>
+        </g>
+    </g>
+</svg>
