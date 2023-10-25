@@ -24,7 +24,7 @@ export default function () {
     <>
       <motion.img
         src={`/${randomBalon()}.svg`}
-        className="h-max w-28"
+        className="h-max w-14 md:w-28"
         initial={{ y: 1000, x: randomX(), position: "absolute" }}
         animate={{ y: randomY() }}
         transition={{

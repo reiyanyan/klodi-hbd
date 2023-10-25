@@ -84,13 +84,7 @@ export default function () {
     var audio = document.createElement("audio");
     audio.autoplay = true;
     audio.load();
-    audio.addEventListener(
-      "load",
-      function () {
-        audio.play();
-      },
-      true
-    );
+    audio.addEventListener("load", () => audio.play(), true);
     audio.volume = 0.7;
     audio.src = src;
   }, []);
