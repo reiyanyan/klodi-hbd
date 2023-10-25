@@ -38,7 +38,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://klodi-hbd.vercel.app" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/image.svg" />
+        <meta property="og:image" content="/image.jpg" />
         <meta
           property="og:title"
           content="Title apapun ini boleh diganti sih"
@@ -51,7 +51,7 @@ export default function RootLayout({
         <meta property="twitter:url" content="https://klodi-hbd.vercel.app" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/image.svg" />
+        <meta name="twitter:image" content="/image.jpg" />
         <meta
           name="twitter:title"
           content="Title apapun ini boleh diganti sih"
