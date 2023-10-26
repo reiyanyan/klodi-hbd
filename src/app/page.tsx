@@ -9,6 +9,7 @@ import Balon from "@/app/component/balon";
 import Button from "./component/button";
 import DateInput from "./component/date-input";
 import Gallery from "./component/gallery";
+import Gift from "./component/gift";
 import Input from "./component/input";
 import Label from "./component/label";
 import { Player } from "@lottiefiles/react-lottie-player";
@@ -185,6 +186,9 @@ export default function () {
                 <Gallery />
                 <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8">
                   <p>letter birthday nantinya disini</p>
+                </div>
+                <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8">
+                  <Gift />
                 </div>
               </div>
             </>
