@@ -13,6 +13,8 @@ import Gift from "./component/gift";
 import Input from "./component/input";
 import Label from "./component/label";
 import { Player } from "@lottiefiles/react-lottie-player";
+import Playlist from "./component/playlist";
+import clsxm from "./utils/clsxm";
 import { useState } from "react";
 
 type Form = {
@@ -33,6 +35,7 @@ const variants: Variants = {
 const BASE_AGE = 27;
 
 export default function () {
+  const [boxVisible, setBoxVisible] = useState(true);
   const [balons, setBalon] = useState([<Balon />]);
   const [isName, setIsName] = useState(true);
   const [greetings, setGreetings] = useState([
@@ -45,13 +48,17 @@ export default function () {
   const [form, setForm] = useState<Form>({
     name: "",
     age: "",
-    state: "FORM",
+    state: "FINAL",
   });
 
   function handleAdd() {
     if (balons.length <= 26) {
       setBalon([...balons, <Balon />]);
     }
+  }
+
+  function onBoxOpen() {
+    setBoxVisible(false);
   }
 
   useEffect(() => {
@@ -81,13 +88,13 @@ export default function () {
   }, [form.state]);
 
   useEffect(() => {
-    const src = "/shabba.mp3";
-    var audio = document.createElement("audio");
-    audio.autoplay = true;
-    audio.load();
-    audio.addEventListener("load", () => audio.play(), true);
-    audio.volume = 0.7;
-    audio.src = src;
+    // const src = "/shabba.mp3";
+    // var audio = document.createElement("audio");
+    // audio.autoplay = true;
+    // audio.load();
+    // audio.addEventListener("load", () => audio.play(), true);
+    // audio.volume = 0.7;
+    // audio.src = src;
   }, []);
 
   return (
@@ -184,12 +191,38 @@ export default function () {
             <>
               <div className="absolute top-1/2 h-full w-full">
                 <Gallery />
-                <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8">
+                <Playlist />
+                <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8 bg-gradient-to-b from-[#303952] to-black">
                   <p>letter birthday nantinya disini</p>
                 </div>
                 <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8">
-                  <Gift />
+                  <Gift onBoxOpen={() => onBoxOpen()} />
                 </div>
+                {/* <div
+                  className={clsxm(
+                    `${
+                      !boxVisible ? "flex" : "hidden"
+                    }h-screen flex-col items-center text-center justify-center px-4 md:px-8`
+                  )}
+                >
+                  {!boxVisible && (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{
+                        opacity: 1,
+                        scale: 1,
+                        transition: { delay: 3 },
+                      }}
+                      className="h-full w-full flex flex-col justify-center items-center gap-y-8"
+                    >
+                      <p className="text-3xl">wanna go dinner wimme? 🥹</p>
+                      <div className="flex flex-col gap-y-4">
+                        <Button>A. LETTTGGGOOOOO</Button>
+                        <Button>B. NGABISA NOLAK 😛</Button>
+                      </div>
+                    </motion.div>
+                  )}
+                </div> */}
               </div>
             </>
           )}

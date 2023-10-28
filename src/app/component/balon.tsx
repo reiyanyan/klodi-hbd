@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 export default function () {
   function randomBalon() {
-    const balons = ["balon1", "balon2", "balon3"];
+    const balons = ["balon1", "balon2", "balon3", "balon4", "balon5", "balon6"];
     const numberRand = Math.floor(Math.random() * balons.length);
     return balons[numberRand];
   }

@@ -54,7 +54,14 @@ const itemVariants: Variants = {
 };
 
 export const variantTemplate1: Variants = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
   visible: {
+    opacity: 1,
+    scale: 1,
+    // backgroundColor: ['hsl(0, 100, 50)', 'hsl(240, 100, 50)],
     transition: {
       staggerChildren: 0.025,
     },
