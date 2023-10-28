@@ -14,7 +14,6 @@ import Input from "./component/input";
 import Label from "./component/label";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Playlist from "./component/playlist";
-import clsxm from "./utils/clsxm";
 import { useState } from "react";
 
 type Form = {
@@ -48,7 +47,7 @@ export default function () {
   const [form, setForm] = useState<Form>({
     name: "",
     age: "",
-    state: "FINAL",
+    state: "FORM",
   });
 
   function handleAdd() {
@@ -86,16 +85,6 @@ export default function () {
       }, 3000);
     }
   }, [form.state]);
-
-  useEffect(() => {
-    // const src = "/shabba.mp3";
-    // var audio = document.createElement("audio");
-    // audio.autoplay = true;
-    // audio.load();
-    // audio.addEventListener("load", () => audio.play(), true);
-    // audio.volume = 0.7;
-    // audio.src = src;
-  }, []);
 
   return (
     <div
