@@ -9,21 +9,21 @@ export default function () {
       artist: "Taylor's",
       img: "https://i.scdn.co/image/ab67616d00001e02a48964b5d9a3d6968ae3e0de",
       song: "the_way",
-      time: 47,
+      time: 187,
     },
     {
       title: "Enchanted",
       artist: "Taylor's",
       img: "https://i.scdn.co/image/ab67616d00001e020b04da4f224b51ff86e0a481",
       song: "enc",
-      time: 107,
+      time: 334,
     },
     {
       title: "You Belong With Me",
       artist: "Taylor's",
       img: "https://i.scdn.co/image/ab67616d00001e02a48964b5d9a3d6968ae3e0de",
       song: "belong",
-      time: 175,
+      time: 194,
     },
   ]);
 

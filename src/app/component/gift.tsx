@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Button from "./button";
 import Confetti from "./confetti";
 import { Player } from "@lottiefiles/react-lottie-player";
+import Voucher from "./voucher";
 import { useState } from "react";
 
 type GiftProps = React.HTMLAttributes<HTMLDivElement> & {
@@ -52,11 +53,11 @@ export default function ({ onBoxOpen }: GiftProps) {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0 }}
               transition={{ type: "spring" }}
-              className="h-3/4 w-full flex flex-col justify-center items-center gap-y-8"
+              className="h-screen w-full grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-4 md:gap-8 py-6 md:py-14"
             >
-              test isi apa nanti deh
+              <Voucher />
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{
                 opacity: 1,
@@ -70,7 +71,7 @@ export default function ({ onBoxOpen }: GiftProps) {
                 <Button>A. LETTTGGGOOOOO</Button>
                 <Button>B. NGABISA NOLAK 😛</Button>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         )}
       </AnimatePresence>

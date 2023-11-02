@@ -1,7 +1,11 @@
 "use client";
 
+import { Ref, useRef } from "react";
+
 import { motion } from "framer-motion";
+
 export default function () {
+  const motionImageRef = useRef<HTMLImageElement>(null);
   function randomBalon() {
     const balons = ["balon1", "balon2", "balon3", "balon4", "balon5", "balon6"];
     const numberRand = Math.floor(Math.random() * balons.length);
@@ -20,13 +24,20 @@ export default function () {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  function addBounce() {
+    motionImageRef.current?.classList.add("animate-bounce");
+  }
+
   return (
     <>
       <motion.img
+        ref={motionImageRef}
         src={`/${randomBalon()}.svg`}
         className="h-max w-14 md:w-28"
         initial={{ y: 1000, x: randomX(), position: "absolute" }}
-        animate={{ y: randomY() }}
+        animate={{
+          y: randomY(),
+        }}
         transition={{
           type: "spring",
           duration: 3,

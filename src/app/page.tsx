@@ -7,6 +7,7 @@ import { AnimatedTextTemplate1 } from "./component/animated";
 import ArrowLongRight from "./component/icon/arrow-long-right";
 import Balon from "@/app/component/balon";
 import Button from "./component/button";
+import Confetti from "./component/confetti";
 import DateInput from "./component/date-input";
 import Gallery from "./component/gallery";
 import Gift from "./component/gift";
@@ -37,7 +38,9 @@ export default function () {
   const [boxVisible, setBoxVisible] = useState(true);
   const [balons, setBalon] = useState([<Balon />]);
   const [isName, setIsName] = useState(true);
-  const [greetings, setGreetings] = useState([
+  const [greetings, setGreetings] = useState<
+    { id: string; text: string; confetti?: boolean }[]
+  >([
     {
       id: randomString(),
       text: "",
@@ -47,7 +50,7 @@ export default function () {
   const [form, setForm] = useState<Form>({
     name: "",
     age: "",
-    state: "FORM",
+    state: "FINAL",
   });
 
   function handleAdd() {
@@ -75,6 +78,7 @@ export default function () {
           {
             id: randomString(),
             text: "Happy " + form.age + "th",
+            confetti: true,
           },
         ]);
         clearTimeout(timer);
@@ -151,10 +155,10 @@ export default function () {
       {form.state === "GREETINGS" && (
         <div className="px-5 flex flex-col gap-y-10 items-center justify-center h-full text-5xl">
           {greetings.map((val) => (
-            <AnimatedTextTemplate1
-              key={val.id}
-              text={val.text}
-            ></AnimatedTextTemplate1>
+            <React.Fragment key={val.id}>
+              <AnimatedTextTemplate1 text={val.text}></AnimatedTextTemplate1>
+              {val.confetti && <Confetti />}
+            </React.Fragment>
           ))}
         </div>
       )}
