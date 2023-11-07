@@ -2,22 +2,16 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 
-import Button from "./button";
 import Confetti from "./confetti";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Voucher from "./voucher";
 import { useState } from "react";
 
-type GiftProps = React.HTMLAttributes<HTMLDivElement> & {
-  onBoxOpen: Function;
-};
-
-export default function ({ onBoxOpen }: GiftProps) {
+export default function () {
   const [boxVisible, setBoxVisible] = useState(true);
 
   function handleOpenBox() {
     setBoxVisible(false);
-    onBoxOpen(true);
     window.scroll({
       top: 100,
       left: 0,

@@ -3,108 +3,52 @@ import "./styles/voucher.css";
 const vocs = [
   {
     title: "Romantic Dinner",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Tempatnya yang lusyu",
   },
   {
     title: "Homemad Food",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "",
-      right: "by Chef Klodi",
-    },
+    desc: "All you want",
   },
   {
     title: "Concert Date",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Pengen nonton HC 😔",
   },
   {
     title: "Night Ride",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Aku mau di culieeekk",
   },
   {
     title: "Free Hug",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
-  },
-  {
-    title: "All Day w/Klodi",
-    desc: "all day nga tuch 😋",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Ayo lagi remake hk pt.2",
   },
   {
     title: "Have a Little Picnic",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Kemana aja sambil foto lusyu",
   },
   {
     title: "Road Trip",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Yang jauh ya!!!!!",
   },
   {
     title: "Coffee Date",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Sering sih, tp aku mau yg gabiasa 🕺",
   },
   {
     title: "Ice Cream Date",
-    desc: "Lorem ipsum 🍦🍨❄️💦",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Mau gelatooooo 😭",
   },
   {
     title: "Beach Date",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Ayo malem ya!!",
   },
   {
     title: "Watching Sunset 🌞",
-    desc: "Lorem ipsum dolor sit amet",
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
+    desc: "Mau foto pake digicam jg 😾👊",
   },
   {
     title: "Anything u Want",
-    desc: "Lorem ipsum dolor sit amet",
+    desc: "👩‍❤️‍💋‍👨😜🤩👀🤝👅",
     special: true,
-    footer: {
-      left: "klodi",
-      right: "halo",
-    },
   },
 ];
 
@@ -127,8 +71,6 @@ const VoucherItem = ({ val, ...rest }: VoucherItemProps) => {
         <hr />
         <div className="ticketDetail">
           <div>{val.desc}</div>
-          {/* <div>Studio:&nbsp; 5</div> */}
-          {/* <div>Time:&emsp; 19:20</div> */}
         </div>
         <div className="ticketRip">
           <div className="circleLeft"></div>
@@ -136,11 +78,7 @@ const VoucherItem = ({ val, ...rest }: VoucherItemProps) => {
           <div className="circleRight"></div>
         </div>
         <div className="ticketSubDetail">
-          <div className="code">{val.footer.left}</div>
-          <div className="date">
-            {val.footer.right}
-            {/* Jan 14<sup>th</sup> 2023 */}
-          </div>
+          <div className="code">Claim!</div>
         </div>
       </div>
       {/* <div className="ticketShadow"></div> */}

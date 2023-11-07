@@ -35,7 +35,7 @@ const variants: Variants = {
 const BASE_AGE = 27;
 
 export default function () {
-  const [boxVisible, setBoxVisible] = useState(true);
+  // const [boxVisible, setBoxVisible] = useState(true);
   const [balons, setBalon] = useState([<Balon />]);
   const [isName, setIsName] = useState(true);
   const [greetings, setGreetings] = useState<
@@ -50,7 +50,7 @@ export default function () {
   const [form, setForm] = useState<Form>({
     name: "",
     age: "",
-    state: "FINAL",
+    state: "FORM",
   });
 
   function handleAdd() {
@@ -59,9 +59,9 @@ export default function () {
     }
   }
 
-  function onBoxOpen() {
-    setBoxVisible(false);
-  }
+  // function onBoxOpen() {
+  //   setBoxVisible(false);
+  // }
 
   useEffect(() => {
     const { state } = form;
@@ -186,10 +186,15 @@ export default function () {
                 <Gallery />
                 <Playlist />
                 <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8 bg-gradient-to-b from-[#303952] to-black">
-                  <p>letter birthday nantinya disini</p>
+                  <p>
+                    Aku mempunyai kue yang sangat enak yang ingin kubagikan
+                    kepadamu dan dua lilin yang menancap serta berbagi
+                    kebahagidan bersama sama dengan menyanyikan lagu cinta kita.
+                    Serta mulia, panjang umurnya calon tunanganku.
+                  </p>
                 </div>
                 <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8">
-                  <Gift onBoxOpen={() => onBoxOpen()} />
+                  <Gift />
                 </div>
                 {/* <div
                   className={clsxm(
