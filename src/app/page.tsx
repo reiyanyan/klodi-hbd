@@ -51,7 +51,7 @@ export default function () {
   const [form, setForm] = useState<Form>({
     name: "",
     age: "",
-    state: "FINAL",
+    state: "FORM",
   });
 
   function handleAdd() {
