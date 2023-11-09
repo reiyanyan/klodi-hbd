@@ -4,41 +4,41 @@ import Image from "next/image";
 import style from "./masonry.module.css";
 
 const images = [
+  // {
+  //   title: "Photo title",
+  //   img: "/static/1.jpg",
+  // },
   {
     title: "Photo title",
-    img: "/img/1.jpg",
+    img: "/static/2.jpg",
   },
   {
     title: "Photo title",
-    img: "/img/2.jpg",
+    img: "/static/3.jpg",
   },
   {
     title: "Photo title",
-    img: "/img/3.jpg",
+    img: "/static/4.jpg",
   },
   {
     title: "Photo title",
-    img: "/img/4.jpg",
+    img: "/static/5.jpg",
   },
   {
     title: "Photo title",
-    img: "/img/5.jpg",
+    img: "/static/6.jpg",
   },
   {
     title: "Photo title",
-    img: "/img/6.jpg",
+    img: "/static/8.jpg",
   },
   {
     title: "Photo title",
-    img: "/img/8.jpg",
+    img: "/static/9.jpg",
   },
   {
     title: "Photo title",
-    img: "/img/9.jpg",
-  },
-  {
-    title: "Photo title",
-    img: "/img/10.jpg",
+    img: "/static/10.jpg",
   },
 ];
 
