@@ -10,35 +10,39 @@ const images = [
   // },
   {
     title: "Photo title",
-    img: "/static/2.jpg",
+    img: "/img/2.jpg",
   },
   {
     title: "Photo title",
-    img: "/static/3.jpg",
+    img: "/img/3.jpg",
   },
   {
     title: "Photo title",
-    img: "/static/4.jpg",
+    img: "/img/4.jpg",
   },
   {
     title: "Photo title",
-    img: "/static/5.jpg",
+    img: "/img/5.jpg",
   },
   {
     title: "Photo title",
-    img: "/static/6.jpg",
+    img: "/img/6.jpg",
   },
   {
     title: "Photo title",
-    img: "/static/8.jpg",
+    img: "/img/8.jpg",
   },
   {
     title: "Photo title",
-    img: "/static/9.jpg",
+    img: "/img/9.jpg",
   },
   {
     title: "Photo title",
-    img: "/static/10.jpg",
+    img: "/img/10.jpg",
+  },
+  {
+    title: "Photo title",
+    img: "/img/11.jpg",
   },
 ];
 
@@ -88,7 +92,7 @@ export default function () {
               <Image
                 alt=""
                 className="rounded"
-                src={item.img}
+                src={"https://ik.imagekit.io/3592mo0vh/" + item.img}
                 width={0}
                 height={0}
                 sizes="100vw"
