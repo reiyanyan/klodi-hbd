@@ -29,10 +29,10 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
         <link rel="icon" href="/favicon.ico"></link>
-        <title>Happy Birthday</title>
+        <title>Happy Birthday!</title>
         <meta
           name="description"
-          content="ka bima blablablabla lorem ipsum dolor sit amet, boleh diganti ini"
+          content="Dari Vira ponyo"
         />
 
         <meta property="og:url" content="https://klodi-hbd.vercel.app" />
@@ -41,11 +41,11 @@ export default function RootLayout({
         <meta property="og:image" content="/image.jpg" />
         <meta
           property="og:title"
-          content="Title apapun ini boleh diganti sih"
+          content="Buat kak bima"
         />
         <meta
           property="og:description"
-          content="ka bima blablablabla lorem ipsum dolor sit amet, boleh diganti ini"
+          content="Dari Vira ponyo"
         />
 
         <meta property="twitter:url" content="https://klodi-hbd.vercel.app" />
@@ -57,11 +57,11 @@ export default function RootLayout({
         />
         <meta
           name="twitter:title"
-          content="Title apapun ini boleh diganti sih"
+          content="Buat kak bima"
         />
         <meta
           name="twitter:description"
-          content="ka bima blablablabla lorem ipsum dolor sit amet, boleh diganti ini"
+          content="Dari Vira ponyo"
         />
 
         <meta property="twitter:domain" content="klodi-hbd.vercel.app" />
