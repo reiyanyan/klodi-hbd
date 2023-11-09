@@ -150,10 +150,10 @@ export default function () {
             <div className="hidden md:block col-span-1"></div>
             <div className="col-span-1 md:col-span-4 w-full h-full">
               {/* <Player loop autoplay src="/lottie/rock-band.json"></Player> */}
-              <Image
+              <img
                 height="260"
                 width="460"
-                src="/img/7.jpg"
+                src="https://ik.imagekit.io/3592mo0vh/img/7.jpg"
                 className="h-[260px] w-[460px] object-cover rounded-lg"
                 alt=""
               />

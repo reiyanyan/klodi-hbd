@@ -89,7 +89,7 @@ export default function () {
           >
             <div className="relative w-full h-full cursor-pointer">
               {/* <img className="rounded" src={item.img} /> */}
-              <Image
+              <img
                 alt=""
                 className="rounded"
                 src={"https://ik.imagekit.io/3592mo0vh/" + item.img}
