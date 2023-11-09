@@ -22,7 +22,7 @@ export default function ({ val, ...rest }: CardProps) {
   );
 
   return (
-    <div {...rest} className="bg-gray-900 shadow-lg rounded p-3">
+    <div {...rest} className="bg-gray-900 shadow-lg rounded-lg p-3">
       <audio
         ref={audioRef}
         controls
@@ -30,7 +30,7 @@ export default function ({ val, ...rest }: CardProps) {
         src={`${val.song}.mp3`}
       ></audio>
       <div className="group relative">
-        <img className="w-full md:w-72 block rounded" src={val.img} alt="" />
+        <img className="w-full md:w-72 block rounded-lg" src={val.img} alt="" />
         <div className="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
           <button
             className="hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition select-none"

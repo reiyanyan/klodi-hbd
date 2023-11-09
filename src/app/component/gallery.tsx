@@ -6,39 +6,39 @@ import style from "./masonry.module.css";
 const images = [
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/1.jpg",
   },
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/photo-1543297031-d102cd432d54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/2.jpg",
   },
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/photo-1510797215324-95aa89f43c33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/3.jpg",
   },
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/4.jpg",
   },
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/5.jpg",
   },
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/6.jpg",
   },
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/reserve/HgZuGu3gSD6db21T3lxm_San%20Zenone.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/8.jpg",
   },
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/9.jpg",
   },
   {
     title: "Photo title",
-    img: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img: "/img/10.jpg",
   },
 ];
 
@@ -94,14 +94,14 @@ export default function () {
                 sizes="100vw"
                 style={{ width: "100%", height: "auto" }}
               />
-              <div
+              {/* <div
                 className={
                   "absolute bottom-0 w-full h-24 px-4 pt-6 " + style.overlay
                 }
               >
                 <div className="text-white text-lg">{item.title}</div>
                 <div className="text-gray-400 text-sm">Photographer</div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         ))}

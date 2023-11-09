@@ -31,7 +31,7 @@ export default function () {
     <AudioProvider>
       <div className="grid place-items-center min-h-screen bg-gradient-to-b from-black to-[#303952] p-5">
         <div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-200 mb-5">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold text-gray-200 mb-5">
             Made for you
           </h1>
           <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">

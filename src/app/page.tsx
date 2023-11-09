@@ -11,6 +11,7 @@ import Confetti from "./component/confetti";
 import DateInput from "./component/date-input";
 import Gallery from "./component/gallery";
 import Gift from "./component/gift";
+import Image from "next/image";
 import Input from "./component/input";
 import Label from "./component/label";
 import { Player } from "@lottiefiles/react-lottie-player";
@@ -110,13 +111,13 @@ export default function () {
     >
       {form.state === "FORM" && (
         <div className="px-5 flex flex-col gap-y-10 items-center justify-center h-full">
-          <div className="flex flex-col-reverse gap-y-16 md:grid grid-cols-12 w-full">
+          <div className="flex flex-col-reverse gap-y-8 md:gap-y-16 md:grid grid-cols-12 w-full">
             <div className="hidden md:block col-span-1"></div>
             <motion.div
               animate={isName ? "open" : "closed"}
               variants={variants}
               transition={{ duration: 0.6 }}
-              className={`col-span-1 md:col-span-5 flex-col gap-10 w-full h-full ${
+              className={`col-span-1 md:col-span-5 flex-col gap-5 md:gap-10 w-full h-full ${
                 isName ? "flex" : "hidden"
               }`}
             >
@@ -134,7 +135,7 @@ export default function () {
               animate={!isName ? "open" : "closed"}
               variants={variants}
               transition={{ duration: 0.6 }}
-              className={`col-span-1 md:col-span-5 flex-col gap-10 w-full h-full ${
+              className={`col-span-1 md:col-span-5 flex-col gap-5 md:gap-10 w-full h-full ${
                 !isName ? "flex" : "hidden"
               }`}
             >
@@ -148,7 +149,14 @@ export default function () {
             </motion.div>
             <div className="hidden md:block col-span-1"></div>
             <div className="col-span-1 md:col-span-4 w-full h-full">
-              <Player loop autoplay src="/lottie/rock-band.json"></Player>
+              {/* <Player loop autoplay src="/lottie/rock-band.json"></Player> */}
+              <Image
+                height="260"
+                width="460"
+                src="/img/7.jpg"
+                className="h-[260px] w-[460px] object-cover rounded-lg"
+                alt=""
+              />
             </div>
             <div className="hidden md:block col-span-1"></div>
           </div>

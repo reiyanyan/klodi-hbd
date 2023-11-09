@@ -51,7 +51,7 @@ export default function RootLayout({
         <meta property="twitter:url" content="https://klodi-hbd.vercel.app" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/image.jpg" />
+        <meta name="twitter:image" content="/img/compressed.jpg" />
         <meta
           name="twitter:title"
           content="Title apapun ini boleh diganti sih"

@@ -58,11 +58,7 @@ type VoucherItemProps = {
 
 const VoucherItem = ({ val, ...rest }: VoucherItemProps) => {
   function handleClick() {
-    window.open(
-      "https://wa.me/6281328127813?text=" +
-        val.title +
-        "+atau+apa+deh+ini+bisa+diganti"
-    );
+    window.open("https://wa.me/6281328127813?text=Ayookkk+" + val.title);
   }
   return (
     <div className="ticketContainer">
