@@ -51,7 +51,7 @@ export default function () {
   const [form, setForm] = useState<Form>({
     name: "",
     age: "",
-    state: "FORM",
+    state: "FINAL",
   });
 
   function handleAdd() {
@@ -207,12 +207,14 @@ export default function () {
                 <Gallery />
                 <Playlist />
                 <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8 bg-gradient-to-b from-[#303952] to-black">
-                  <p className="w-full md:w-1/2">
-                    Aku mempunyai kue yang sangat enak yang ingin kubagikan
-                    kepadamu dan dua lilin yang menancap serta berbagi
-                    kebahagidan bersama sama dengan menyanyikan lagu cinta kita.
-                    Serta mulia, panjang umurnya calon tunanganku.
-                  </p>
+                  <div className="w-full md:w-1/2 bg-[url('https://ik.imagekit.io/3592mo0vh/img/8.jpg')] bg-cover bg-center rounded-xl">
+                    <p className="backdrop-blur-sm md:backdrop-blur-md py-16 md:py-36 px-5 md:px-20">
+                      Aku mempunyai kue yang sangat enak yang ingin kubagikan
+                      kepadamu dan dua lilin yang menancap serta berbagi
+                      kebahagidan bersama sama dengan menyanyikan lagu cinta
+                      kita. Serta mulia, panjang umurnya calon tunanganku.
+                    </p>
+                  </div>
                 </div>
                 <div className="h-screen flex flex-col items-center text-center justify-center px-4 md:px-8">
                   <Gift />
