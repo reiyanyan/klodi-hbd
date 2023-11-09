@@ -98,14 +98,14 @@ export default function () {
                 sizes="100vw"
                 style={{ width: "100%", height: "auto" }}
               />
-              {/* <div
+              <div
                 className={
                   "absolute bottom-0 w-full h-24 px-4 pt-6 " + style.overlay
                 }
               >
                 <div className="text-white text-lg">{item.title}</div>
                 <div className="text-gray-400 text-sm">Photographer</div>
-              </div> */}
+              </div>
             </div>
           </motion.div>
         ))}
