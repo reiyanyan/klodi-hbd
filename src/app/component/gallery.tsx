@@ -30,10 +30,6 @@ const images = [
   },
   {
     title: "Photo title",
-    img: "/img/8.jpg",
-  },
-  {
-    title: "Photo title",
     img: "/img/9.jpg",
   },
   {
